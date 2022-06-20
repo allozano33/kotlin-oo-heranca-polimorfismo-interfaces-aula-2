@@ -13,12 +13,6 @@ class Analista(
         get() {
             return super.bonificacao + salario
         }
-
-    fun autentica(senha: Int): Boolean {
-        if(this.senha == senha){
-            return true
-        }
-        return false
     }
 
 }

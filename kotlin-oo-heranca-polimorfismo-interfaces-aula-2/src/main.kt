@@ -49,6 +49,16 @@ fun main() {
     } else {
         println("falha na autentição")
     }
+    val maria = Analista(
+        nome = "maria",
+        cpf = "444.444.444-44",
+        salario = 3000.0
+    )
+    println("nome ${maria.nome}")
+    println("cpf ${maria.cpf}")
+    println("salario ${maria.salario}")
+    println("bonificação ${maria.bonificacao}")
+    println("plr ${maria.plr}")
 }
 
 
