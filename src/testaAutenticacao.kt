@@ -18,9 +18,8 @@ fun testaAutenticacao() {
         senha = 1234
     )
 
-
-//    val sistema = SistemaInterno()
-//    sistema.entra(gerente, 1000)
-//    sistema.entra(diretora, 2000)
-//    sistema.entra(cliente,1234)
+    val sistema = SistemaInterno()
+    sistema.entra(gerente, 1000)
+    sistema.entra(diretora, 2000)
+    sistema.entra(cliente,1234)
 }
