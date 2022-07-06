@@ -7,18 +7,26 @@ fun testaContasDiferentes() {
         titular = "Fran",
         numero = 1001
     )
+    val contaSalario = ContaSalario(
+        titular = "Ale",
+        numero = 1002
+    )
 
     contaCorrente.deposita(1000.0)
     contaPoupanca.deposita(1000.0)
+    contaSalario.deposita(1000.0)
 
     println("saldo corrente: ${contaCorrente.saldo}")
     println("saldo poupança: ${contaPoupanca.saldo}")
+    println("saldo salario: ${contaSalario.saldo}")
 
     contaCorrente.saca(100.0)
     contaPoupanca.saca(100.0)
+    contaSalario.saca(100.0)
 
     println("saldo após saque corrente: ${contaCorrente.saldo}")
     println("saldo após saque poupança: ${contaPoupanca.saldo}")
+    println("saldo após saque salario: ${contaSalario.saldo}")
 
     contaCorrente.transfere(100.0, contaPoupanca)
 
@@ -29,4 +37,7 @@ fun testaContasDiferentes() {
 
     println("saldo poupança após transferir para corrente: ${contaPoupanca.saldo}")
     println("saldo corrente após receber transferência: ${contaCorrente.saldo}")
+
+    contaCorrente.transfere(100.0, contaSalario )
+    println("Saldo Conta Salario ${contaSalario.saldo}")
 }

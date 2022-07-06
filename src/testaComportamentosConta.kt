@@ -5,6 +5,9 @@ fun testaComportamentosConta() {
     val contaFran = ContaPoupanca(numero = 1001, titular = "Fran")
     contaFran.deposita(300.0)
 
+    val contaAle = ContaSalario(numero = 1002, titular = "Ale")
+    contaAle.deposita(300.0)
+
     println(contaFran.titular)
     println(contaFran.numero)
     println(contaFran.saldo)
@@ -13,6 +16,10 @@ fun testaComportamentosConta() {
     println(contaAlex.numero)
     println(contaAlex.saldo)
 
+    println(contaAle.titular)
+    println(contaAle.numero)
+    println(contaAle.saldo)
+
     println("depositando na conta do Alex")
     contaAlex.deposita(50.0)
     println(contaAlex.saldo)
@@ -20,6 +27,10 @@ fun testaComportamentosConta() {
     println("depositando na conta da Fran")
     contaFran.deposita(70.0)
     println(contaFran.saldo)
+
+    println("depositando na conta do Ale")
+    contaAle.deposita(70.0)
+    println(contaAle.saldo)
 
     println("sacando na conta do Alex")
     contaAlex.saca(250.0)
@@ -47,4 +58,5 @@ fun testaComportamentosConta() {
 
     println(contaAlex.saldo)
     println(contaFran.saldo)
+    println(contaAle.saldo)
 }
