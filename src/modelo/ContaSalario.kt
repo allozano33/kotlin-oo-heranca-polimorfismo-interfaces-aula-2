@@ -1,7 +1,11 @@
+package modelo
+
+import modelo.Conta
+
 class ContaSalario(
     titular: String,
     numero: Int
-) :Conta(
+) : Conta(
     titular = titular,
     numero = numero
 ){

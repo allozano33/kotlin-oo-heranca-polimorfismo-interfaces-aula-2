@@ -1,3 +1,5 @@
+import modelo.*
+
 fun testaFuncionarios() {
     val alex = Analista(
         nome = "Alex",

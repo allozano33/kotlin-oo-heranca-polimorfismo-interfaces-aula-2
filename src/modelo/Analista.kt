@@ -1,16 +1,16 @@
-class AnalistadeIT(
+package modelo
+
+class Analista(
     nome: String,
     cpf: String,
     salario: Double
-
 ) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario
 ) {
-
     override val bonificacao: Double
-        get() {
-            return salario + salario * 0.097
+    get() {
+        return salario * 0.1
         }
 }

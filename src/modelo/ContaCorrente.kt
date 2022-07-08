@@ -1,4 +1,6 @@
-class ContaPoupanca(
+package modelo
+
+class ContaCorrente(
     titular: String,
     numero: Int
 ) : ContaTransferivel(
@@ -6,8 +8,9 @@ class ContaPoupanca(
     numero = numero
 ) {
     override fun saca(valor: Double) {
-        if(this.saldo >= valor){
-            this.saldo -= valor
+        val valorComTaxa = valor + 0.1
+        if(this.saldo >= valorComTaxa){
+            this.saldo -= valorComTaxa
         }
     }
 }
