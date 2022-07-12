@@ -1,17 +1,17 @@
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
-import modelo.ContaSalario
+import br.com.alura.bytebank.modelo.ContaCorrente
+import br.com.alura.bytebank.modelo.ContaPoupanca
+import br.com.alura.bytebank.modelo.ContaSalario
 
 fun testaContasDiferentes() {
-    val contaCorrente = ContaCorrente(
+    val contaCorrente = br.com.alura.bytebank.modelo.ContaCorrente(
         titular = "Alex",
         numero = 1000
     )
-    val contaPoupanca = ContaPoupanca(
+    val contaPoupanca = br.com.alura.bytebank.modelo.ContaPoupanca(
         titular = "Fran",
         numero = 1001
     )
-    val contaSalario = ContaSalario(
+    val contaSalario = br.com.alura.bytebank.modelo.ContaSalario(
         titular = "Ale",
         numero = 1002
     )
@@ -43,5 +43,5 @@ fun testaContasDiferentes() {
     println("saldo corrente após receber transferência: ${contaCorrente.saldo}")
 
     contaCorrente.transfere(100.0, contaSalario )
-    println("Saldo modelo.Conta Salario ${contaSalario.saldo}")
+    println("Saldo Conta Salario ${contaSalario.saldo}")
 }

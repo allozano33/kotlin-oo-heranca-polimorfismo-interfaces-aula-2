@@ -1,15 +1,13 @@
-package modelo
-
-import modelo.Conta
+package br.com.alura.bytebank.modelo
 
 abstract class ContaTransferivel(
     titular: String,
     numero: Int
-) : Conta(
+) : br.com.alura.bytebank.modelo.Conta(
     titular = titular,
     numero = numero
 ){
-    fun transfere(valor: Double, destino: Conta): Boolean {
+    fun transfere(valor: Double, destino: br.com.alura.bytebank.modelo.Conta): Boolean {
         if (saldo >= valor) {
             saldo -= valor
             destino.deposita(valor)

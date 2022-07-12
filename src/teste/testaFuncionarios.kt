@@ -1,7 +1,5 @@
-import modelo.*
-
 fun testaFuncionarios() {
-    val alex = Analista(
+    val alex = br.com.alura.bytebank.modelo.Analista(
         nome = "Alex",
         cpf = "111.111.111-11",
         salario = 1000.0
@@ -12,7 +10,7 @@ fun testaFuncionarios() {
     println("salario ${alex.salario}")
     println("bonificação ${alex.bonificacao}")
 
-    val fran = Gerente(
+    val fran = br.com.alura.bytebank.modelo.Gerente(
         nome = "Fran",
         cpf = "222.222.222-22",
         salario = 2000.0,
@@ -31,7 +29,7 @@ fun testaFuncionarios() {
         println("falha na autenticação")
     }
 
-    val gui = Diretor(
+    val gui = br.com.alura.bytebank.modelo.Diretor(
         nome = "Gui",
         cpf = "333.333.333-33",
         salario = 4000.0,
@@ -52,7 +50,7 @@ fun testaFuncionarios() {
     }
 
 
-    val maria = Analista(
+    val maria = br.com.alura.bytebank.modelo.Analista(
         "maria",
         "444.444.444-44",
         3000.0
@@ -63,7 +61,7 @@ fun testaFuncionarios() {
     println("salario ${maria.salario} ")
     println("bonificacao ${maria.bonificacao}")
 
-    val godofredo = AnalistadeIT(
+    val godofredo = br.com.alura.bytebank.modelo.AnalistadeIT(
         "Godofredo",
         "555.555.555-55",
         7224.0
@@ -73,7 +71,7 @@ fun testaFuncionarios() {
     println("salario ${godofredo.salario}")
     println("bonificação ${godofredo.bonificacao}")
 
-    val calculadora = CalculadoraBonificacao()
+    val calculadora = br.com.alura.bytebank.modelo.CalculadoraBonificacao()
     calculadora.registra(alex)
     calculadora.registra(fran)
     calculadora.registra(gui)

@@ -1,13 +1,11 @@
-package modelo
-
-import modelo.Funcionario
+package br.com.alura.bytebank.modelo
 
 class Auxiliar(
     nome: String,
     cpf: String,
     salario: Double
 
-) : Funcionario(
+) : br.com.alura.bytebank.modelo.Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario
