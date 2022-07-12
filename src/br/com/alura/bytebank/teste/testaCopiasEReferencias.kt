@@ -8,9 +8,9 @@ fun testaCopiasEReferencias() {
     println("numeroX $numeroX")
     println("numeroY $numeroY")
 
-    val contaJoao = br.com.alura.bytebank.modelo.ContaCorrente("João", 1002)
+    val contaJoao = ContaCorrente("João", 1002)
     contaJoao.titular = "João"
-    var contaMaria = br.com.alura.bytebank.modelo.ContaCorrente("Maria", 1003)
+    var contaMaria = ContaCorrente("Maria", 1003)
     contaMaria.titular = "Maria"
     contaJoao.titular = "João"
 

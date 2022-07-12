@@ -3,7 +3,7 @@ package br.com.alura.bytebank.modelo
 class ContaCorrente(
     titular: String,
     numero: Int
-) : br.com.alura.bytebank.modelo.ContaTransferivel(
+) : ContaTransferivel(
     titular = titular,
     numero = numero
 ) {

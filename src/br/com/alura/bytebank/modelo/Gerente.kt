@@ -5,12 +5,12 @@ class Gerente(
     cpf: String,
     salario: Double,
     senha: Int
-) : br.com.alura.bytebank.modelo.FuncionarioAdmin(
+) : FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,
     senha = senha
-), br.com.alura.bytebank.modelo.Autenticavel {
+), Autenticavel {
 
     override val bonificacao: Double
         get() {

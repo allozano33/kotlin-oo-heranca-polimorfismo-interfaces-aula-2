@@ -5,7 +5,7 @@ class AnalistadeIT(
     cpf: String,
     salario: Double
 
-) : br.com.alura.bytebank.modelo.Funcionario(
+) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario

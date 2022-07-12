@@ -6,11 +6,11 @@ abstract class FuncionarioAdmin(
     salario: Double,
     val senha: Int
 
-) : br.com.alura.bytebank.modelo.Funcionario(
+) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario
-), br.com.alura.bytebank.modelo.Autenticavel {
+), Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
         if (this.senha == senha) {

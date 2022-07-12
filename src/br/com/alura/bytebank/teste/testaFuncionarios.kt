@@ -1,5 +1,7 @@
+import br.com.alura.bytebank.modelo.Analista
+
 fun testaFuncionarios() {
-    val alex = br.com.alura.bytebank.modelo.Analista(
+    val alex = Analista(
         nome = "Alex",
         cpf = "111.111.111-11",
         salario = 1000.0

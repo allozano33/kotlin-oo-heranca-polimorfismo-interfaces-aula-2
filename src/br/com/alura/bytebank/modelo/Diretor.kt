@@ -6,7 +6,7 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : br.com.alura.bytebank.modelo.FuncionarioAdmin(
+) : FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,
